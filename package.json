@@ -3,8 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "browserslist": {
+    "development": [
+      "last 2 versions",
+      "> 0.5%",
+      "not ie 6-11"
+    ],
+    "production": [
+      "last 2 versions",
+      "> 0.5%",
+      "not ie 6-11"
+    ]
+  },
   "scripts": {
-    "dev": "vite -c ./config/vite.config.js --open",
+    "start": "vite -c ./config/vite.config.js --open",
     "build": "tsc && vite build -c ./config/vite.config.js",
     "preview": "vite preview -c ./config/vite.config.js"
   },
@@ -21,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.54.0",
     "@vitejs/plugin-react": "^3.1.0",
+    "autoprefixer": "^10.4.13",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.6.0",
     "eslint-config-standard-with-typescript": "^34.0.0",
@@ -29,16 +42,12 @@
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.32.2",
-    "postcss-scss": "^4.0.6",
+    "postcss": "^8.4.21",
     "prettier": "^2.8.4",
     "sass": "^1.58.3",
     "stylelint": "^15.2.0",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-prettier-scss": "^0.0.1",
-    "stylelint-config-recommended-scss": "^9.0.1",
-    "stylelint-config-standard-scss": "^7.0.1",
+    "stylelint-config-standard": "^30.0.1",
     "stylelint-order": "^6.0.2",
-    "stylelint-prettier": "^3.0.0",
     "stylelint-scss": "^4.4.0",
     "typescript": "*",
     "vite": "^4.1.0",

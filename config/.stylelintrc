@@ -1,13 +1,7 @@
 {
-  "syntax": "postcss-scss",
-  "extends": [
-    "stylelint-config-standard-scss",
-    "stylelint-config-recommended-scss",
-    "stylelint-config-prettier-scss"
-  ],
-  "plugins": ["stylelint-scss", "stylelint-order", "stylelint-prettier"],
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-scss", "stylelint-order"],
   "rules": {
-    "prettier/prettier": true,
     "selector-class-pattern": null,
     "color-hex-alpha": "never",
     "color-named": "never",
@@ -28,6 +22,7 @@
       true,
       { "ignoreShorthands": ["/grid/"] }
     ],
+    "declaration-property-value-no-unknown": true,
     "order/properties-order": [
       "content",
       "quotes",
