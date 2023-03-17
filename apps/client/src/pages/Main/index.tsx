@@ -1,10 +1,10 @@
 import { shallow } from "zustand/shallow";
-import Choice from "ui/src/components/questions/Choice";
-import ExtendedText from "ui/src/components/questions/ExtendedText";
-import HotText from "ui/src/components/questions/HotText";
-import InlineChoice from "ui/src/components/questions/InlineChoice";
-import TextEntry from "ui/src/components/questions/TextEntry";
-import Upload from "ui/src/components/questions/Upload";
+import Choice from "@ui/components/questions/Choice";
+import ExtendedText from "@ui/components/questions/ExtendedText";
+import HotText from "@ui/components/questions/HotText";
+import InlineChoice from "@ui/components/questions/InlineChoice";
+import TextEntry from "@ui/components/questions/TextEntry";
+import Upload from "@ui/components/questions/Upload";
 import { QUESTION_TYPE } from "~/constants/types";
 import {
   choiceMock,
@@ -12,7 +12,7 @@ import {
   hotTextMock,
   inlineChoiceMock,
   textEntryMock,
-} from "~/mock/qti";
+} from "@ui/mock/qti";
 import { store } from "~/store";
 import Header from "~/components/layout/Header";
 
