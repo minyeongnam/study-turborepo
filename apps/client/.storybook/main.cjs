@@ -1,9 +1,14 @@
 const { mergeConfig, loadConfigFromFile } = require("vite");
 const svgr = require("vite-plugin-svgr");
-const path = require("path");
+const { resolve } = require("path");
 
 module.exports = {
-  stories: ["../src/**/*.stories.mdx", "../src/**/*.stories.@(js|jsx|ts|tsx)", "../../../packages/ui/src/**/*.stories.mdx", "../../../packages/ui/src/**/*.stories.@(js|jsx|ts|tsx)"],
+  stories: [
+    "../src/**/*.stories.mdx",
+    "../src/**/*.stories.@(js|jsx|ts|tsx)",
+    "../../../packages/ui/src/**/*.stories.mdx",
+    "../../../packages/ui/src/**/*.stories.@(js|jsx|ts|tsx)",
+  ],
   addons: [
     {
       name: "@storybook/addon-essentials",
@@ -38,7 +43,7 @@ module.exports = {
   viteFinal: async (config) => {
     const { config: userConfig } = await loadConfigFromFile(
       "serve",
-      path.resolve(__dirname, "../vite.config.ts"),
+      resolve(__dirname, "../vite.config.ts"),
       "./"
     );
     return mergeConfig(config, {
