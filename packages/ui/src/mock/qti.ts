@@ -64,7 +64,7 @@ export const inlineChoiceMock = {
     question:
       "Identify the missing word in this famous quote from Shakespeare's Richard III.",
     contents:
-      "<p>Now is the winter of our discontent <br/>Made glorious summer by this sun of <qti-inline-choice-interaction response-identifier='RESPONSE' shuffle='false'><qti-inline-choice identifier='G'>Gloucester</qti-inline-choice><qti-inline-choice identifier='L'>Lancaster</qti-inline-choice><qti-inline-choice identifier='Y'>York</qti-inline-choice></qti-inline-choice-interaction>;<br/>And all the clouds that lour'd upon our house <br/>In the deep bosom of the ocean buried.</p>",
+      "Now is the <span style='color: orange'>winter</span> of our discontent <br/>Made glorious summer by this sun of <qti-inline-choice-interaction response-identifier='RESPONSE' shuffle='false'><qti-inline-choice identifier='G'>Gloucester</qti-inline-choice><qti-inline-choice identifier='L'>Lancaster</qti-inline-choice><qti-inline-choice identifier='Y'>York</qti-inline-choice></qti-inline-choice-interaction>;<br/>And all the clouds that lour'd upon our house <br/>In the deep bosom of the <qti-inline-choice-interaction response-identifier='RESPONSE' shuffle='false'><qti-inline-choice identifier='O'>ocean</qti-inline-choice><qti-inline-choice identifier='L'>Lake</qti-inline-choice><qti-inline-choice identifier='Y'>York</qti-inline-choice></qti-inline-choice-interaction> buried.",
   },
 };
 
@@ -93,6 +93,6 @@ export const hotTextMock = {
     maxChoices: "1",
     responseIdentifier: "RESPONSE",
     contents:
-      "<p>Sponsors of the Olympic Games <qti-hottext identifier='A'>who bought</qti-hottext>advertising time on United States television <qti-hottext identifier='B'>includes</qti-hottext><qti-hottext identifier='C'>at least</qti-hottext> a dozen international firms <qti-hottext identifier='D'>whose</qti-hottext> names are familiar to American consumers. <qti-hottext identifier='E'>No error.</qti-hottext></p>",
+      '<div>Sponsors of the <strong style="fontWeight: bold; color: orange">Olympic Games </strong><qti-hottext className="b" identifier="A">who bought </qti-hottext> advertising time on United States television \n<qti-hottext identifier="B">includes </qti-hottext><qti-hottext identifier="C">at least</qti-hottext><br/> a dozen international firms <qti-hottext identifier="D">whose</qti-hottext> names are familiar to American consumers. <hr/><qti-hottext identifier="E">No error.</qti-hottext></div><table><tbody><tr><th>table head</th></tr><tr><td style="backgroundColor: #eee;"><qti-hottext identifier="F">Identifier "F"</qti-hottext></td></tr></tbody></table>',
   },
 };

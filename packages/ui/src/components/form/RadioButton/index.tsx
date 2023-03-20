@@ -8,7 +8,10 @@ interface RadioButtonType
 
 const RadioButton = ({ className, children, ...rest }: RadioButtonType) => {
   return (
-    <div className={classNames("input-box__radio", [className])}>
+    <div
+      className={classNames("input-box__radio", [className])}
+      style={{ display: "inline-block" }}
+    >
       <input type="radio" {...rest} />
       {children}
     </div>
