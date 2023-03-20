@@ -17,7 +17,7 @@ const Header = () => {
       <h1
         style={{ marginBottom: "30px", fontSize: "32px", fontWeight: "bold" }}
       >
-        Client
+        Admin
       </h1>
       <ul>
         <li>

@@ -12,6 +12,69 @@ importers:
       prettier: 2.8.4
       turbo: 1.8.3
 
+  apps/admin:
+    specifiers:
+      '@babel/core': ^7.21.3
+      '@storybook/addon-actions': ^6.5.16
+      '@storybook/addon-essentials': ^6.5.16
+      '@storybook/addon-interactions': ^6.5.16
+      '@storybook/addon-links': ^6.5.16
+      '@storybook/builder-vite': ^0.4.2
+      '@storybook/cli': ^6.5.16
+      '@storybook/react': ^6.5.16
+      '@storybook/testing-library': ^0.0.13
+      '@types/node': ^18.15.3
+      '@types/react': ^18.0.27
+      '@types/react-dom': ^18.0.10
+      '@vitejs/plugin-react': ^3.1.0
+      autoprefixer: ^10.4.14
+      babel-loader: ^8.3.0
+      classnames: ^2.3.2
+      immer: ^9.0.19
+      path: ^0.12.7
+      postcss: ^8.4.21
+      react: ^18.2.0
+      react-dom: ^18.2.0
+      reset-css: ^5.0.1
+      sass: ^1.59.3
+      tsconfig: workspace:*
+      typescript: ^4.9.3
+      ui: workspace:*
+      vite: ^4.1.0
+      vite-plugin-svgr: ^2.4.0
+      zustand: ^4.3.6
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+      ui: link:../../packages/ui
+      zustand: 4.3.6_immer@9.0.19+react@18.2.0
+    devDependencies:
+      '@babel/core': 7.21.3
+      '@storybook/addon-actions': 6.5.16_biqbaboplfbrettd7655fr4n2y
+      '@storybook/addon-essentials': 6.5.16_av5h4nsolznusrom2sctheqffe
+      '@storybook/addon-interactions': 6.5.16_qevfixmk4f2dqzrxfwckmwv67u
+      '@storybook/addon-links': 6.5.16_biqbaboplfbrettd7655fr4n2y
+      '@storybook/builder-vite': 0.4.2_5zy3w45pet7djtof6vitkt7gby
+      '@storybook/cli': 6.5.16_aed6vusvogjrl3ch6j2aqnpvhe
+      '@storybook/react': 6.5.16_w25xo3qkx6twhnovm7yeh42swe
+      '@storybook/testing-library': 0.0.13_biqbaboplfbrettd7655fr4n2y
+      '@types/node': 18.15.3
+      '@types/react': 18.0.28
+      '@types/react-dom': 18.0.11
+      '@vitejs/plugin-react': 3.1.0_vite@4.2.0
+      autoprefixer: 10.4.14_postcss@8.4.21
+      babel-loader: 8.3.0_h5x7dh6zbbyopr7jvxivhylqpa
+      classnames: 2.3.2
+      immer: 9.0.19
+      path: 0.12.7
+      postcss: 8.4.21
+      reset-css: 5.0.1
+      sass: 1.59.3
+      tsconfig: link:../../packages/tsconfig
+      typescript: 4.9.5
+      vite: 4.2.0_bbhgkqmop4v24vevyan3j2nitq
+      vite-plugin-svgr: 2.4.0_vite@4.2.0
+
   apps/client:
     specifiers:
       '@babel/core': ^7.21.3
@@ -629,7 +692,7 @@ packages:
       '@babel/core': ^7.0.0-0
     dependencies:
       '@babel/core': 7.12.9
-      '@babel/helper-plugin-utils': 7.10.4
+      '@babel/helper-plugin-utils': 7.20.2
       '@babel/plugin-syntax-object-rest-spread': 7.8.3_@babel+core@7.12.9
       '@babel/plugin-transform-parameters': 7.21.3_@babel+core@7.12.9
     dev: true
@@ -3810,13 +3873,13 @@ packages:
     resolution: {integrity: sha512-9K4zoImiZc3HlIp6AVUDE4CWYx22a+lhSZMYNpbjW04+YF0KWj4pJXnEMjdnFTiQibFFmElcsasJXDbdI/EPhA==}
     dependencies:
       '@types/eslint': 8.21.3
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
     dev: true
 
   /@types/eslint/8.21.3:
     resolution: {integrity: sha512-fa7GkppZVEByMWGbTtE5MbmXWJTVbrjjaS8K6uQj+XtuuUv1fsuPAxhygfqLmsb/Ufb3CV8deFCpiMfAgi00Sw==}
     dependencies:
-      '@types/estree': 0.0.51
+      '@types/estree': 1.0.0
       '@types/json-schema': 7.0.11
     dev: true
 
@@ -6545,7 +6608,7 @@ packages:
       eslint-scope: 7.1.1
       eslint-utils: 3.0.0_eslint@8.4.1
       eslint-visitor-keys: 3.3.0
-      espree: 9.2.0
+      espree: 9.5.0
       esquery: 1.5.0
       esutils: 2.0.3
       fast-deep-equal: 3.1.3

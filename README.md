@@ -12,6 +12,16 @@ softeer-candidate-test-app
 
 </br>
 
+## Storybook 설치
+
+```
+cd apps/client || cd apps/admin
+pnpx sb init --skip-install
+pnpm install --save-dev @storybook/cli
+```
+
+</br>
+
 ## 폴더구조
 
 <details>
