@@ -1,6 +1,6 @@
 # turborepo-test
 
-Turborepo를 적용 테스트 프로젝트
+Turborepo 적용 테스트 프로젝트
 
 ## Project Run script
 
